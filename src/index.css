@@ -116,7 +116,7 @@ textarea {
   background: rgba(0, 0, 0, 0.74);
   color: #fff;
   transition: all 0.5s ease;
-  transition-delay: 0.7s;
+  transition-delay: 0.5s;
 }
 
 .container.dark .section_input button:hover {
@@ -128,5 +128,5 @@ textarea {
 .container.dark .section_input input[type=text] {
   border: 1px solid #fff;
   transition: all 0.5s ease;
-  transition-delay: 0.7s;
+  transition-delay: 0.5s;
 }

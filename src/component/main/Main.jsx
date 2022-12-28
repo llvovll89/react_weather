@@ -10,17 +10,6 @@ export const Main = () => {
   const [city, setCity] = useState('daegu');
   const [darkmode , setDarkMode] = useState(false);
 
-  // 섭씨 - 화씨 // api - temp 에서 켈빈온도로 받아와서,,구현 불가
-  // const [unitItem, setUnitItem] = useState('imperial');
-
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration : 1000,
-  //     deley: 100
-  //   });
-  //   AOS.refresh();
-  // }, []);
-
   const handelClick = () => {
     setDarkMode(!darkmode)
   }
@@ -38,9 +27,6 @@ export const Main = () => {
       setCity(e.currentTarget.value);
     }
   }
-  const onChange = (e) => {
-    console.log(e.currentTarget.value);
-  }
 
   return (
     <>
@@ -48,7 +34,7 @@ export const Main = () => {
         <div className="overlay">
           {weather && (
             <div className={darkmode ? "container dark" : "container"}>
-              <Header keydown={enterCLick} change={onChange} dark={handelClick} title={darkmode ? "DARK" : "WHITE"}/>
+              <Header keydown={enterCLick} dark={handelClick} title={darkmode ? "DARK" : "WHITE"}/>
               <Form
                 name={weather.name}
                 country={weather.country}
@@ -63,4 +49,4 @@ export const Main = () => {
       </div>
     </>
   );
-};
+}
