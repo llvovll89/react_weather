@@ -8,6 +8,7 @@
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.38);
     transition: 0.5s all ease;
+    border: 1px solid #ccc;
 }
 
 .section_input input[type=text]::placeholder,

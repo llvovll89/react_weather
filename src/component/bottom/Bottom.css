@@ -7,7 +7,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.38);
 }
 
 .card .card_content {
@@ -16,9 +15,10 @@
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.38);
-    padding: 0.7rem 0.5rem;
+    padding: 1rem 0.5rem;
     border-radius: 0.6rem;
     transition: all 0.5s ease;
+    border: 1px solid #ccc;
 }
 
 .card .card_content .card_text

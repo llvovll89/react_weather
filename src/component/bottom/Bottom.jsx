@@ -61,7 +61,7 @@ export const Bottom = ({ weather }) => {
   return (
     <>
       <div className="section section_desc">
-        <div className="card">
+        <div className="card">  
           {items.map((item) => (
             <div className="card_content" key={item.id}>
               <span className="card_text">
